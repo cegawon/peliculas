@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<style>
+    .container-fluid{
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+        flex-wrap: wrap;
+    }    
+    
+    .card{
+        text-align: center;
+    }
+    .cardd{
+      width: 300px;
+    }
+    .titulo{
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .cantidad{
+        margin-right: 30px;
+    }
+    .can-boto{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .botones{
+        margin-top: 0px;
+    }
+    .imagen{
+        margin-top: 20px;
+    }
+    .uvas2{
+        width: 300px;
+        height: 180px;
+    }
+    .a{
+        margin-left: 20px;
+    }
+    .titulo1{
+        margin-top: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .fresas{
+        width: 300px;
+        height: 200px;
+    }
+    .precio1{
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .can1-boto1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .cantidad1{
+    
+        margin-right: 30px;
+        
+    }
+    .botones1{
+        
+        margin-top: 0px;
+    }
+    .uvas{
+        height: 500px;  
+
+    }
+    .fre{
+        height: 600px;
+    }
+    .per{
+        height: 500px;
+        width: 500px;
+    }
+    .manzana{
+      height: 500px;
+      width: 600px;
+    }
+    .mora{
+      height: 500px;
+      width: 300px;
+    }
+    .moras{
+      height: 180px;
+      width: 300px;
+    }
+    .per2{
+      display: flex;
+      justify-content: center;
+    }
+    footer{
+        margin-top: 90px;
+    }
+    .iconos a:link{
+      text-decoration: none;
+    }
+    .b{
+      margin-top: 20px;
+    }
+    P{
+      text-align: justify;
+    }
+    .bc{
+      margin-top: -55px;
+      margin-left: 50px;
+    }
+    .produ a:link{
+      text-decoration: none;
+    }
+    .produ a:hover{
+      text-decoration: underline;
+    }
+    .c{
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+   .pro{
+    text-align: center;
+   }
+   .uvas{
+    width: 600px;
+   }
+   .manzana{
+    width: 300px;
+   }
+}
+</style>
+<body>
+<nav class="navbar bg-body-tertiary">
+  <div class="container d-flex justify-content-center">
+    <div class="shadow p-3 mb-5 bg-body-tertiary rounded fw-bold d-flex justify-content-center" style="background-color: white; margin-top:20px;">LAS MEJORES PELICULAS DE EL SIGLO XXI</div>
+    <a class="navbar-brand d-none" href="#">
+      <img src="logo.png" alt="" width="100" height="74" class="logo">
+    </a>
+   <div class="carrito d-none">
+     <i class="bi bi-cart4" style="font-size: 50px;"></i>
+     <div class="bc">
+      <span class="translate-middle badge rounded-pill bg-danger">
+       99+
+      </span>
+     </div> 
+    </div>
+  </div>
+</nav>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide d-none" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+             <div class="per2">
+               <img src="uvas.jpg" class="d-block uvas">
+             </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>UVAS</h5>
+              <p>Contiene todas las vitaminas del grupo B y, especialmente es rica en vitamina B6, de gran importancia para el sistema nervioso. También aporta betacaroteno,
+                 precursor de la vitamina A, muy útil para una perfecta visión y protección de las mucosas, además de ser un excelente antioxidante</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="fresas.jpg" class="d-block w-100 fre" >
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FRESAS</h5>
+              <p>Contienen antocianinas, las cuales son pigmentos que ayudan areducir el colesteroly el riesgo de sufrir hipertensión. Son muy ricas en agua, vitaminas,
+                 antioxidantes, potasio y calcio. Por lo tanto, tienen importantes propiedades hidratantes. Son ricas en vitaminas, especialmente la C.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="per2">
+             <img src="pera.jpg" class="d-block per">
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>PERA</h5>
+              <p>Las peras son ricas en sales minerales y en vitaminas C y A. La vitamina A es necesaria para el buen funcionamiento de la vista,
+                 para el crecimiento óseo y para el mantenimiento de los tejidos.
+                 Mientras que la vitamina C sirve como antioxidante y su carencia puede derivar en la manifestación del escorbuto.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+              <div class="per2">
+               <img src="manzana.jpg" class="d-block manzana">
+               </div>
+              <div class="carousel-caption d-none d-md-block">
+              <h5>MANZANA</h5>
+              <p>Entre sus vitaminas destaca la C: una manzana puede cubrir el 30% de las necesidades diarias.
+                 Es rica en boro, mineral que interviene en numerosas funciones del organismo. Una de ellas es la de facilitar la asimilación del calcio y el magnesio,
+                 por lo que contribuye a prevenir la osteoporosis. La manzana es una de las frutas más ricas en boro.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+             <div class="per2">
+               <img src="mora.jpg" class="d-block mora">
+             </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h5>MORA</h5>
+              <p>Las moras son muy apreciadas por su valor nutricional. Entre sus principales vitaminas se destacan la C y la E, que actúan como antioxidantes;
+                 además, tienen un pigmento flavonoide denominado antocianina, que es responsable de su efecto  antiinflamatorio.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <div class="per2">
+              <img src="durazno.jpg" class="d-block mora">
+            </div>
+           <div class="carousel-caption d-none d-md-block">
+             <h5>DRAZNO</h5>
+             <p>Ayuda a la digestión.
+              Es una fruta fácil de digerir, Evita la constipación.
+              Gracias a su elevado contenido en fibra dietética, resulta muy aconsejable para combatir el estreñimiento, Ayuda a controlar el peso.
+              Un durazno mediano proporciona unas 50 kcal. Por su aporte en fibra y vitaminas, constituye un tentempié ideal en las dietas, Ayuda a la presión.
+              Debido al potasio que entrega y el bajo sodio que contiene, ayuda a regular la presión arterial.</p>
+           </div>
+         </div>
+         <div class="carousel-item" data-bs-interval="5000">
+          <div class="per2">
+            <img src="pitaya.jpg" class="d-block mora">
+          </div>
+         <div class="carousel-caption d-none d-md-block">
+           <h5>PITAYA</h5>
+           <p>En el aspecto nutricional, además de ser muy refrescante, la pitahaya es fuente de antioxidantes naturales, contiene vitamina C;
+             entre sus propiedades también destaca su contenido de captina,
+             que contribuye a relajar el sistema nervioso. Además, cuenta con vitamina B2, vital para la producción de glóbulos rojos.</p>
+         </div>
+       </div>
+       <div class="carousel-item" data-bs-interval="5000">
+        <div class="per2">
+          <img src="mango.jpg" class="d-block mora">
+        </div>
+       <div class="carousel-caption d-none d-md-block">
+         <h5>MANGO</h5>
+         <p>El mango es una fruta versátil, su ingesta diaria puede ayudar a prevenir cáncer de seno, de la sangre (leucemia),
+           de próstata y de colon, combate la sequedad ocular, ayuda a la absorción de hierro, la formación de glóbulos rojos, colágeno, dientes y huesos.</p>
+       </div>
+     </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="container-fluid">
+        
+        <div class="c">
+            <div class="card">
+                <div class="card-header titulo">
+                    AVENGERS END GAME
+                </div>    
+                    <div class="imagen">
+                        <img src="Avenger.jpg" alt="" class="uvas2">
+                    </div>
+                    <div class="precio1">
+                        <p class="fw-bold fs-5"></p>
+                    </div>
+                    <div class="can-boto">
+                       <div class="cantidad">
+                       </div>
+                        <div class="botones">
+                            <a href="avengers-end-game.html" class="btn btn-primary">Detalles</a>
+                       </div>
+                    </div>                   
+            </div>
+        </div>
+        <div class="c">
+          <div class="card">
+              <div class="card-header titulo">
+                  AVATAR 2
+              </div>    
+                  <div class="imagen">
+                      <img src="avatar.jpg" alt="" class="uvas2">
+                  </div>
+                  <div class="precio1">
+                      <p class="fw-bold fs-5"></p>
+                  </div>
+                  <div class="can-boto">
+                     <div class="cantidad">
+                     </div>
+                      <div class="botones">
+                          <a href="avatar.html" class="btn btn-primary">Detalles</a>
+                     </div>
+                  </div>                   
+          </div>
+      </div>
+      <div class="c">
+        <div class="card">
+            <div class="card-header titulo">
+                RAMPAGE
+            </div>    
+                <div class="imagen">
+                    <img src="rampage.webp" alt="" class="uvas2">
+                </div>
+                <div class="precio1">
+                    <p class="fw-bold fs-5"></p>
+                </div>
+                <div class="can-boto">
+                   <div class="cantidad">
+                   </div>
+                    <div class="botones">
+                        <a href="rampage.html" class="btn btn-primary">Detalles</a>
+                   </div>
+                </div>                   
+        </div>
+    </div>
+    <div class="c">
+      <div class="card">
+          <div class="card-header titulo">
+              LION KING
+          </div>    
+              <div class="imagen">
+                  <img src="rey leon.jpg" alt="" class="uvas2">
+              </div>
+              <div class="precio1">
+                  <p class="fw-bold fs-5"></p>
+              </div>
+              <div class="can-boto">
+                 <div class="cantidad">
+                 </div>
+                  <div class="botones">
+                      <a href="lk.html" class="btn btn-primary">Detalles</a>
+                 </div>
+              </div>                   
+      </div>
+  </div>
+  <div class="c">
+    <div class="card">
+        <div class="card-header titulo">
+            WAKANDA FOREVER
+        </div>    
+            <div class="imagen">
+                <img src="Wakanda.jpg" alt="" class="uvas2">
+            </div>
+            <div class="precio1">
+                <p class="fw-bold fs-5"></p>
+            </div>
+            <div class="can-boto">
+               <div class="cantidad">
+               </div>
+                <div class="botones">
+                    <a href="wf.html" class="btn btn-primary">Detalles</a>
+               </div>
+            </div>                   
+    </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          BAYWATCH
+      </div>    
+          <div class="imagen">
+              <img src="baywatch.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="bw.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          SCREAM VI
+      </div>    
+          <div class="imagen">
+              <img src="Scream.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="s6.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          JOHN WICK
+      </div>    
+          <div class="imagen">
+              <img src="wik.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="jw.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          FREE GUY
+      </div>    
+          <div class="imagen">
+              <img src="Free_Guy.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="fg.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          DEADPOOL
+      </div>    
+          <div class="imagen">
+              <img src="deadpool.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="dp.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          SON COMO NIÑOS
+      </div>    
+          <div class="imagen">
+              <img src="son-como-ninos.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="sn.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          GODZILLA VS KONG
+      </div>    
+          <div class="imagen">
+              <img src="godzilla-vs-kong.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="gk.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          BABY
+      </div>    
+          <div class="imagen">
+              <img src="Baby.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="bb.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          FAST & FURIOUS
+      </div>    
+          <div class="imagen">
+              <img src="rf.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="rf.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          SUICIDE SQUAD
+      </div>    
+          <div class="imagen">
+              <img src="suicida.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="ss.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          6 UNDERGROUN
+      </div>    
+          <div class="imagen">
+              <img src="Escuadron.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="6u.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          THE PURGE
+      </div>    
+          <div class="imagen">
+              <img src="la-purga.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="th.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          SPIDER MAN
+      </div>    
+          <div class="imagen">
+              <img src="spider.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="sm.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          JUMANJI
+      </div>    
+          <div class="imagen">
+              <img src="jumanji.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="jm.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+<div class="c">
+  <div class="card">
+      <div class="card-header titulo">
+          WORLD WAR Z 
+      </div>    
+          <div class="imagen">
+              <img src="Guerra.jpg" alt="" class="uvas2">
+          </div>
+          <div class="precio1">
+              <p class="fw-bold fs-5"></p>
+          </div>
+          <div class="can-boto">
+             <div class="cantidad">
+             </div>
+              <div class="botones">
+                  <a href="gz.html" class="btn btn-primary">Detalles</a>
+             </div>
+          </div>                   
+  </div>
+</div>
+
+              
+    </div>
+    <script>
+        
+        const myCarouselElement = document.querySelector('#carouselExampleDark')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false
+})
+    </script>
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>conectate con nuestras redes:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div class="iconos">
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook-"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Company name
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 produ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4 ">
+              Productos
+            </h6>
+            <p class="pro">
+              <a href="#!" class="text-reset">dulce</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">acido</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">amargo</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">agridulce</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 produ">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p class="pro">
+              <a href="#!" class="text-reset">Pricing</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p class="pro">
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+            <p class="pro"><i class="bi bi-house"></i> New York, NY 10012, US</p>
+            <p class="pro">
+              <i class="bi bi-envelope"></i>
+              info@example.com
+            </p>
+            <p class="pro"><i class="bi bi-telephone"></i> + 01 234 567 88</p>
+            <p class="pro"><i class="bi bi-whatsapp"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
